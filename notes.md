@@ -1,7 +1,5 @@
 
-# installing and using venv here in windows
+## install and use venv in windows
 
 python -m venv .
 source ./Scripts/activate
-
-#
