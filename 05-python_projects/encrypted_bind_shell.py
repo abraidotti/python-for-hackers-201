@@ -1,8 +1,15 @@
 import socket, subprocess, threading, argparse
 
-from Cryptodome.Cipher import AES
-from Cryptodome.Random import get_random_bytes
-from Cryptodome.Util.Padding import pad, unpad
+# use 'pip install pycryptodome' BUT you'll get an error...
+# ###
+# from Cryptodome.Cipher import AES
+# from Cryptodome.Random import get_random_bytes
+# from Cryptodome.Util.Padding import pad, unpad
+# ###
+# so use this library name instead:
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+from Crypto.Util.Padding import pad, unpad
 
 DEFAULT_PORT = 1234
 MAX_BUFFER = 4096
